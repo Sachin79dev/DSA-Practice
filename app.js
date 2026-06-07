@@ -47,4 +47,4 @@ for(let i = 0; i<str.length; i++) {
     }
 }
 console.log(`Vowels are ${vowels}`);
-console.log(`Cone are ${cons}`);
+console.log(`Consonant are ${cons}`);
