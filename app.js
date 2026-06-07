@@ -137,3 +137,28 @@ function printDayName(day) {
 }
 
 console.log(printDayName(3)); // Wednesday
+
+
+
+// Check if a character is a Vowel or Consonant 
+
+
+
+function checkChar(ch) {
+    //write your code here
+    ch = ch.toLowerCase();
+
+    switch (ch) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            return 'Vowel';
+        default:
+            return 'Consonant';
+    }
+}
+
+
+console.log(checkChar('A'));
