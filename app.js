@@ -1,5 +1,5 @@
 
-// counting the vowels inside given string
+// counting the vowels inside given string using switch/case condtions
 
 
 let str = prompt("Enter a String")
@@ -26,4 +26,21 @@ for(let i = 0; i<str.length; i++) {
 }
 
 console.log(`Consonent are ${vowels}`);
+console.log(`Vowels are ${vowels}`);
+
+
+
+// counting the vowels inside given string using if/else conditions
+
+
+let str = prompt("Enter a String")
+let vowels = 0;
+
+for(let i = 0; i<str.length; i++) {
+    ch = str.charAt(i).toLowerCase()
+
+    if(ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u' ) {
+        vowels++
+    }
+}
 console.log(`Vowels are ${vowels}`);
