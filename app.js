@@ -34,6 +34,7 @@ console.log(`Vowels are ${vowels}`);
 
 
 let str = prompt("Enter a String")
+let cons = 0;
 let vowels = 0;
 
 for(let i = 0; i<str.length; i++) {
@@ -41,6 +42,9 @@ for(let i = 0; i<str.length; i++) {
 
     if(ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u' ) {
         vowels++
+    } else {
+        cons++
     }
 }
 console.log(`Vowels are ${vowels}`);
+console.log(`Cone are ${cons}`);
