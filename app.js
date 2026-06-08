@@ -258,3 +258,34 @@ function factorial(n) {
 
 
 factorial(6)
+
+
+
+
+
+// sum of even and odd numbers in a range and swaping them 
+
+function sumEvenOddInRange(start, end) {
+    if (start > end) {
+        [start, end] = [end, start];
+    }
+
+    let evenSum = 0;
+    let oddSum = 0;
+
+    for (let i = start; i <= end; i++) {
+        if (i % 2 === 0) {
+            evenSum += i;
+        } else {
+            oddSum += i;
+        }
+    }
+
+    return [evenSum, oddSum];
+
+    let ans = sumEvenOddInRange(start, end);
+
+    for (let x of ans) {
+        console.log(x);
+    }
+}
