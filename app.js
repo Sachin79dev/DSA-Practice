@@ -180,3 +180,22 @@ function printNumbers(n) {
 
 
 printNumbers(5)
+
+
+
+
+// Print natural numbers from N to 1
+
+function printNumbers(n) {
+    let result = [];
+
+    for (let i = 1; i <= n; i++) {
+        result.push(i);
+    }
+
+    return result;
+}
+
+
+let ans = printNumbers(5);
+console.log(ans.join(' '));
