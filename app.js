@@ -220,3 +220,21 @@ function sumUpToN(n) {
 let sumed = sumUpToN(5)
 
 console.log(sumed);
+
+
+
+// factorial of a number 
+
+function factorial(n) {
+    let fact = 1;
+
+    for(i = 1; i <= n; i++) {
+        fact = fact *= i;
+    }
+    
+    return fact
+}
+
+let facts = factorial(4)
+
+console.log(facts);
