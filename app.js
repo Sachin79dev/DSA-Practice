@@ -238,3 +238,23 @@ function factorial(n) {
 let facts = factorial(4)
 
 console.log(facts);
+
+
+
+// factorial of a number that does not have remainder and print in string 
+
+function factorial(n) {
+    let result = [];
+
+    for (let i = 1; i <= n; i++) {
+        if (n % i === 0) {
+            result.push(i);
+        }
+    }
+
+    console.log(result.join(' '));
+
+}
+
+
+factorial(6)
