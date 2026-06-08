@@ -312,9 +312,11 @@ console.log(exp);
 
 let marks= [80,90,70,85,95]; 
 
-let avg = marks.reduce((n, i) => {
+let sum = marks.reduce((n, i) => {
     return (n + i)
 }, 0)
 
+let avg = sum/marks.length
 
-console.log(avg/marks.length);
+
+console.log(avg);
