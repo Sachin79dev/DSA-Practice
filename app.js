@@ -289,3 +289,18 @@ function sumEvenOddInRange(start, end) {
         console.log(x);
     }
 }
+
+
+
+
+
+// find expensive products 
+
+
+let prices= [100,250,500,150,700];
+
+let exp = prices.filter((n) => {
+    return n > 300
+})
+
+console.log(exp);
