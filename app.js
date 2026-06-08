@@ -162,3 +162,21 @@ function checkChar(ch) {
 
 
 console.log(checkChar('A'));
+
+
+
+
+
+// Print natural numbers from N to 1
+
+function printNumbers(n) {
+   //Write your code here
+   let result = [];
+   for(let i = n; i >= 1; i--) {
+      result.push(i);
+   }
+   console.log(result.join(' '));
+}
+
+
+printNumbers(5)
