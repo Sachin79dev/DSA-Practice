@@ -304,3 +304,17 @@ let exp = prices.filter((n) => {
 })
 
 console.log(exp);
+
+
+
+
+// Student average 
+
+let marks= [80,90,70,85,95]; 
+
+let avg = marks.reduce((n, i) => {
+    return (n + i)
+}, 0)
+
+
+console.log(avg/marks.length);
