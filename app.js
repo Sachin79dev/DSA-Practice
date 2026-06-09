@@ -351,3 +351,25 @@ let user = {
 console.log(`Name: ${user.name}`);
 console.log(`Age: ${user.age}`);
 console.log(`City: ${user.city}`);
+
+
+
+// Highest Paid Employee
+
+let employees = {
+    aman: 25000,
+    ritik: 50000,
+    priya: 45000
+};
+
+let highestEmployee = "";
+let highestSalary = 0;
+
+for (let employee in employees) {
+    if (employees[employee] > highestSalary) {
+        highestSalary = employees[employee];
+        highestEmployee = employee;
+    }
+}
+
+console.log(highestEmployee);
