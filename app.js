@@ -335,3 +335,19 @@ user.name = "Sachin"
 
 
 console.log(user.name); // Sachin 
+
+
+
+// Print User Information
+
+
+let user = {
+    name: "Ritik",
+    age: 20,
+    city: "Bhopal"
+}
+
+
+console.log(`Name: ${user.name}`);
+console.log(`Age: ${user.age}`);
+console.log(`City: ${user.city}`);
