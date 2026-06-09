@@ -320,3 +320,18 @@ let avg = sum/marks.length
 
 
 console.log(avg);
+
+
+
+// Update User age
+
+
+let user = {
+    name: "Ritik",
+    age: 20
+};
+
+user.name = "Sachin"
+
+
+console.log(user.name); // Sachin 
