@@ -373,3 +373,16 @@ for (let employee in employees) {
 }
 
 console.log(highestEmployee);
+
+
+
+
+// Discount Calculator
+
+
+function calculateDiscount(price) {
+    let disCount = (price * 10)/100
+    return price - disCount
+}
+
+console.log(calculateDiscount(400));
