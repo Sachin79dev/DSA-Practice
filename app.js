@@ -404,3 +404,26 @@ function sum(...numbers) {
 
 
 sum(1, 2, 3, 4, 5, 6, 7) // 28
+
+
+
+
+// Find Adult Users 
+
+
+let users = [
+    { name: "Ritik", age: 20 },
+    { name: "Aman", age: 16 },
+    { name: "Priya", age: 25 }
+];
+
+
+function getAdults(users) {
+    let user = users.filter((n) => {
+        return n.age > 18
+    })
+    console.log(user);
+}
+
+
+getAdults(users)
