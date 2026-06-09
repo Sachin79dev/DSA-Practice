@@ -427,3 +427,31 @@ function getAdults(users) {
 
 
 getAdults(users)
+
+
+
+
+
+
+// Shopping Cart Total
+
+let cart= [
+{ name:"Mouse", price:500, qty:2 },
+{ name:"Keyboard", price:1000, qty:1 },
+{ name:"Monitor", price:10000, qty:1 }
+];
+
+
+function getCartTotal(cart) {
+    let bill = cart.reduce((n, i) => {
+        let totalItemSum =  i.price * i.qty;
+        return totalItemSum + n
+        
+    }, 0)
+
+
+    console.log(bill);
+    
+}
+
+getCartTotal(cart)
