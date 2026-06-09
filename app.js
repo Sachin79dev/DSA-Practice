@@ -386,3 +386,21 @@ function calculateDiscount(price) {
 }
 
 console.log(calculateDiscount(400));
+
+
+
+
+
+// Dynamic Sum Function
+
+
+function sum(...numbers) {
+    let summed = numbers.reduce((n, i) => {
+        return n + i
+    }, 0)
+
+    console.log(summed);
+}
+
+
+sum(1, 2, 3, 4, 5, 6, 7) // 28
