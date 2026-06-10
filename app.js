@@ -666,4 +666,21 @@ let products = [
 ];
 
 
+
+
+
+
+// Total Revenue 
+
+
+let sales = [500, 700, 1000, 300];
+
+
+let revenue = sales.reduce((n, i) => {  
+    return n + i
+}, 0)
+
+
+console.log(revenue); // 2500
+
 console.log(products.indexOf("Keyboard")); // 2
