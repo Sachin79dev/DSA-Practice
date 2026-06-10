@@ -548,3 +548,24 @@ products.push("Monitor")
 
 
 console.log(products); // (4) ['Laptop', 'Mouse', 'Keyboard', 'Monitor']
+
+
+
+
+
+
+
+
+// Remove last Notification
+
+
+let notifications = [
+    "Order Placed",
+    "Order Shipped",
+    "Order Delivered"
+];
+
+
+notifications.pop()
+
+console.log(notifications); // (2) ['Order Placed', 'Order Shipped']
