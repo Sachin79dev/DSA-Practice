@@ -651,3 +651,19 @@ let even = numbers.filter((n) => {
 
 
 console.log(even); // (4) [2, 4, 6, 8]
+
+
+
+
+// Product search
+
+
+let products = [
+    "Laptop",
+    "Mouse",
+    "Keyboard",
+    "Monitor"
+];
+
+
+console.log(products.indexOf("Keyboard")); // 2
