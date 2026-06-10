@@ -455,3 +455,52 @@ function getCartTotal(cart) {
 }
 
 getCartTotal(cart)
+
+
+
+// Student Grade Report
+
+
+let students = [
+    {
+        name: "Ritik",
+        marks: [80, 90, 85]
+    },
+    {
+        name: "Aman",
+        marks: [50, 40, 60]
+    }
+];
+
+
+
+function generateReport(students) {
+    return students.map((n) => {
+        let totalMarks = n.marks.reduce((acc, i) => {
+            return (acc + i)
+        }, 0);
+
+        let avg = totalMarks / n.marks.length
+
+        let grade;
+
+        if (avg >= 80) {
+            grade = 'A'
+        } else if (avg >= 60) {
+            grade = 'B'
+        } else {
+            grade = 'c'
+        }
+
+
+        return {
+            name: n.name,
+            average: avg,
+            grade: grade
+        }
+    })
+
+}
+
+
+console.log(generateReport(students));
