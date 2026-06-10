@@ -569,3 +569,14 @@ let notifications = [
 notifications.pop()
 
 console.log(notifications); // (2) ['Order Placed', 'Order Shipped']
+
+
+
+
+
+// check user exist 
+
+let users = ["Aman", "Ritik", "Priya"];
+
+
+console.log(users.includes("Ritik")); // true
