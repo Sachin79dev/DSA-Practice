@@ -613,3 +613,22 @@ let cart = [
 
 
 console.log(cart.length); // 4
+
+
+
+
+// Student Average 
+
+
+
+let marks = [80, 90, 70, 85, 95];
+
+
+let total = marks.reduce((n, i, l, arr) => {
+    return n + i
+}, 0)
+
+let avg = total / marks.length
+
+
+console.log(avg); // 84
