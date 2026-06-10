@@ -684,3 +684,20 @@ let revenue = sales.reduce((n, i) => {
 console.log(revenue); // 2500
 
 console.log(products.indexOf("Keyboard")); // 2
+
+
+
+
+
+// Uppercase Usernames
+
+
+let users= ["ritik","aman","priya"];
+
+
+let upper = users.map((n) => {
+    return n.toUpperCase()
+})
+
+
+console.log(upeer);
