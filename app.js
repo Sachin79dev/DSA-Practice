@@ -632,3 +632,22 @@ let avg = total / marks.length
 
 
 console.log(avg); // 84
+
+
+
+
+
+// Even Numbers Finder 
+
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+
+let even = numbers.filter((n) => {
+    if (n % 2 === 0) {
+        return n
+    }
+})
+
+
+console.log(even); // (4) [2, 4, 6, 8]
