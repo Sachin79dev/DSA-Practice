@@ -714,3 +714,17 @@ let adult = ages.find(alt => alt > 18)
 
 
 console.log(adult); // 19
+
+
+// Positive Number Check
+
+
+let nums = [5, 8, 10, 3];
+
+
+let positive = nums.every((n) => {
+    return n > 0
+})
+
+
+console.log(positive); // true
