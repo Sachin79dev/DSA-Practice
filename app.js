@@ -504,3 +504,20 @@ function generateReport(students) {
 
 
 console.log(generateReport(students));
+
+
+
+
+
+// Find Expensive Products
+
+
+let prices= [100,250,500,150,700];
+
+
+let expensive = prices.filter((n) => {
+    return n > 300;
+})
+
+
+console.log(expensive); // (2) [500, 700]
