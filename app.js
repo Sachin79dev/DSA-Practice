@@ -580,3 +580,19 @@ let users = ["Aman", "Ritik", "Priya"];
 
 
 console.log(users.includes("Ritik")); // true
+
+
+
+
+
+
+// convert marks to percantage 
+
+
+let marks = [80, 90, 70];
+
+let prct = marks.map((n) => {
+    return `${n}%`
+})
+
+console.log(prct); // (3) ['80%', '90%', '70%']
