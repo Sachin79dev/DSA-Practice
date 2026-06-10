@@ -701,3 +701,16 @@ let upper = users.map((n) => {
 
 
 console.log(upeer);
+
+
+
+
+// Find First Adult 
+
+
+let ages = [12, 15, 17, 19, 22]; 
+
+let adult = ages.find(alt => alt > 18)
+
+
+console.log(adult); // 19
