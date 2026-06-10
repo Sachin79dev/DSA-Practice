@@ -535,3 +535,16 @@ let lastStd = students[students.length - 1];
 
 console.log(lastStd); // Rahul
 
+
+
+
+
+// Add new product 
+
+
+let products= ["Laptop","Mouse","Keyboard"];
+
+products.push("Monitor")
+
+
+console.log(products); // (4) ['Laptop', 'Mouse', 'Keyboard', 'Monitor']
