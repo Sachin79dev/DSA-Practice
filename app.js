@@ -596,3 +596,20 @@ let prct = marks.map((n) => {
 })
 
 console.log(prct); // (3) ['80%', '90%', '70%']
+
+
+
+
+
+// Count Products
+
+
+let cart = [
+    "Mouse",
+    "Keyboard",
+    "Monitor",
+    "Laptop"
+];
+
+
+console.log(cart.length); // 4
