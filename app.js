@@ -521,3 +521,17 @@ let expensive = prices.filter((n) => {
 
 
 console.log(expensive); // (2) [500, 700]
+
+
+
+
+
+// Find the last student in class
+
+
+let students= ["Aman","Ritik","Priya","Rahul"];
+
+let lastStd = students[students.length - 1];
+
+console.log(lastStd); // Rahul
+
