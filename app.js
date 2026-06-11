@@ -728,3 +728,38 @@ let positive = nums.every((n) => {
 
 
 console.log(positive); // true
+
+
+
+
+// Most Frequent Number
+
+
+let numbers = [1, 2, 3, 2, 4, 2, 5, 1, 1, 1];
+
+
+function mostFreq(numbers) {
+    let frequency = {}
+
+    for (let num of numbers) {
+        frequency[num] = (frequency[num] || 0) + 1; // setting every time num freq.. in onject 
+    }
+
+    // console.log(frequancy);
+
+    let maxCount = 0;
+    let mostFrequent;
+
+
+    for (let num in frequency) {
+        if (frequency[num] > maxCount) { // 4 > 0
+            maxCount = frequency[num]; // 4
+            mostFrequent = Number(num); // 1 // current num
+        }
+    }
+
+    return mostFrequent
+}
+
+
+console.log(mostFreq(numbers)); // 1
