@@ -828,3 +828,20 @@ for (i = 0; i < words.length; i++) {
 }
 
 console.log(longestWord); // Programming 
+
+
+
+
+// Rotate Array Right
+
+let nums = [1, 2, 3, 4, 5];
+
+
+let rotateValue = nums.pop();
+
+
+nums.unshift(rotateValue);
+
+
+console.log(nums); // (5) [5, 1, 2, 3, 4]
+
