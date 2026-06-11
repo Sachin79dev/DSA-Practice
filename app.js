@@ -801,3 +801,30 @@ for(let id of ids) {
 }
 
 console.log(unique); // (5) [1, 2, 3, 4, 5]
+
+
+
+
+
+
+
+// Find Longest Word 
+
+
+let words = [
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Programming"
+];
+
+let longestWord = "";
+
+
+for (i = 0; i < words.length; i++) {
+    if(words[i].length > longestWord.length) {
+        longestWord = words[i]
+    }
+}
+
+console.log(longestWord); // Programming 
