@@ -763,3 +763,22 @@ function mostFreq(numbers) {
 
 
 console.log(mostFreq(numbers)); // 1
+
+
+
+
+
+
+// Second Largest Number 
+
+
+let nums = [10, 50, 20, 80, 40];
+
+
+nums.sort((a, b) => a - b)
+
+
+let secondLargest = nums[nums.length - 2]
+
+
+console.log(secondLargest);
