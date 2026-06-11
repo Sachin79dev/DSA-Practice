@@ -782,3 +782,22 @@ let secondLargest = nums[nums.length - 2]
 
 
 console.log(secondLargest);
+
+
+
+
+
+
+// Remove Duplicates 
+
+let ids = [1, 2, 2, 3, 4, 4, 5, 5];
+
+let unique = []
+
+for(let id of ids) {
+    if(!unique.includes(id)) [
+        unique.push(id)
+    ]
+}
+
+console.log(unique); // (5) [1, 2, 3, 4, 5]
