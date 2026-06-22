@@ -962,3 +962,20 @@ let product = {
 let exist = Object.keys(product)
 
 console.log(exist.includes("price")); // true
+
+
+
+
+
+// Print All Keys 
+
+
+let car = {
+    brand: "BMW",
+    model: "X5",
+    year: 2025
+};
+
+
+
+console.log(Object.keys(car)); // (3) ['brand', 'model', 'year']
