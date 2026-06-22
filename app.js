@@ -1109,3 +1109,22 @@ console.log(userInfo); // {name: 'Ritik', age: 21, city: 'Bhopal', state: 'MP'}
 
 
 
+// Count Object Properties
+
+
+let user = {
+    name: "Ritik",
+    age: 21,
+    city: "Bhopal",
+    country: "India"
+};
+
+let userProp = Object.keys(user)
+
+
+console.log(userProp.length); // 4
+
+
+
+
+
