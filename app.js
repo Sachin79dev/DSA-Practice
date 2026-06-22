@@ -929,3 +929,21 @@ user.country = "India"
 
 
 console.log(user.country); // India
+
+
+
+
+
+// Delete Property
+
+
+let user = {
+    name: "Ritik",
+    age: 21,
+    password: "12345"
+};
+
+delete user.password
+
+
+console.log(user); // {name: 'Ritik', age: 21}
