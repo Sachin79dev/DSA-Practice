@@ -1014,3 +1014,20 @@ console.log(entry);
 for(let val of entry) {
     console.log(`${val[0]}: ${val[1]}`);
 }
+
+
+
+
+
+// Employee Salary Increase
+
+
+let employee = {
+    name: "Aman",
+    salary: 50000
+};
+
+
+employee.salary = employee.salary + (employee.salary*10)/100
+
+console.log(employee); // {name: 'Aman', salary: 55000}
