@@ -1049,3 +1049,26 @@ let user = {
 
 
 console.log(user.address.city); // Bhopal
+
+
+
+
+
+// Object Destructuring
+
+
+let student = {
+    name: "Priya",
+    age: 20,
+    course: "BCA"
+};
+
+
+
+let {name, age} = student
+
+console.log(name); // Priya
+console.log(age); // 20
+
+
+
