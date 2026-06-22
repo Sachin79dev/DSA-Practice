@@ -1072,3 +1072,19 @@ console.log(age); // 20
 
 
 
+// Rename During Destructuring
+
+let student = {
+    name: "Priya",
+    age: 20
+};
+
+
+let {name: studentName, age: studentAge } = student
+
+
+console.log(studentName);
+console.log(studentAge);
+
+
+
