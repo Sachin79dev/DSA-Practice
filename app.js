@@ -947,3 +947,18 @@ delete user.password
 
 
 console.log(user); // {name: 'Ritik', age: 21}
+
+
+
+
+// Check Property Exists
+
+
+let product = {
+    name: "Laptop",
+    price: 60000
+};
+
+let exist = Object.keys(product)
+
+console.log(exist.includes("price")); // true
