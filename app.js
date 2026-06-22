@@ -979,3 +979,18 @@ let car = {
 
 
 console.log(Object.keys(car)); // (3) ['brand', 'model', 'year']
+
+
+
+
+
+// Print All Values 
+
+let car = {
+    brand: "BMW",
+    model: "X5",
+    year: 2025
+};
+
+
+console.log(Object.values(car)); // (3) ['BMW', 'X5', 2025]
