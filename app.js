@@ -994,3 +994,23 @@ let car = {
 
 
 console.log(Object.values(car)); // (3) ['BMW', 'X5', 2025]
+
+
+
+
+// Print User Information Dynamically
+
+let user = {
+    name: "Ritik",
+    age: 21,
+    city: "Bhopal"
+};
+
+let entry = Object.entries(user)
+
+console.log(entry);
+
+
+for(let val of entry) {
+    console.log(`${val[0]}: ${val[1]}`);
+}
