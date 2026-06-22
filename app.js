@@ -1088,3 +1088,24 @@ console.log(studentAge);
 
 
 
+
+// Merge User and Address
+
+let user = {
+    name: "Ritik",
+    age: 21
+};
+let address = {
+    city: "Bhopal",
+    state: "MP"
+};
+
+
+let userInfo = {...user, ...address}
+
+console.log(userInfo); // {name: 'Ritik', age: 21, city: 'Bhopal', state: 'MP'}
+
+
+
+
+
