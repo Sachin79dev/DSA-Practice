@@ -878,3 +878,19 @@ for(let product of sales) {
 
 
 console.log(bestSelling); // "Mouse"
+
+
+
+
+
+// Access User Name 
+
+
+let user = {
+    name: "Ritik",
+    age: 21,
+    city: "Bhopal"
+};
+
+
+console.log(user.name); // Ritik
