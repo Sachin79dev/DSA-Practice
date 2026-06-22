@@ -845,3 +845,36 @@ nums.unshift(rotateValue);
 
 console.log(nums); // (5) [5, 1, 2, 3, 4]
 
+
+
+
+
+// best Selling Product 
+
+
+let sales = [
+    "Mouse",
+    "Keyboard",
+    "Mouse",
+    "Laptop",
+    "Mouse",
+    "Keyboard"
+];
+
+
+let count = {}
+let bestSelling = ""
+let maxCount = 0;
+
+
+for(let product of sales) {
+    count[product] = (count[product] || 0) + 1;
+    
+    if(count[product] > maxCount) {
+        maxCount = count[product]
+        bestSelling = product
+    }
+}
+
+
+console.log(bestSelling); // "Mouse"
