@@ -911,3 +911,21 @@ user.age = 22
 
 
 console.log(user.age); // 22
+
+
+
+
+
+// Add Country 
+
+
+let user = {
+    name: "Ritik",
+    city: "Bhopal"
+};
+
+
+user.country = "India"
+
+
+console.log(user.country); // India
