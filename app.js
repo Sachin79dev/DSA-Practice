@@ -894,3 +894,20 @@ let user = {
 
 
 console.log(user.name); // Ritik
+
+
+
+
+
+// Update User Age 
+
+let user = {
+    name: "Ritik",
+    age: 21
+};
+
+
+user.age = 22
+
+
+console.log(user.age); // 22
