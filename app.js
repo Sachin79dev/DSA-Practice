@@ -1031,3 +1031,21 @@ let employee = {
 employee.salary = employee.salary + (employee.salary*10)/100
 
 console.log(employee); // {name: 'Aman', salary: 55000}
+
+
+
+
+
+// Nested Object Access
+
+
+let user = {
+    name: "Ritik",
+    address: {
+        city: "Bhopal",
+        state: "MP"
+    }
+};
+
+
+console.log(user.address.city); // Bhopal
