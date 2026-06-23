@@ -1455,3 +1455,22 @@ console.log(`Largest Number is: ${largest}`); // Largest Number is: 20
 
 
 
+//  Reverse String
+
+function reverseString(str) {
+    let result = []
+    for (let i = 0; i < str.length; i++) {
+        result.unshift(str[i])
+    }
+
+    return result.join("")
+}
+
+console.log(reverseString("hello")); // olleh
+console.log(reverseString("world")); // dlrow
+
+
+
+
+
+
