@@ -1329,3 +1329,17 @@ greet("Ritik"); // Hello Ritik
 
 
 
+// Add Two Numbers
+
+
+function add(a, b) {
+    return a + b;
+}
+
+
+console.log(add(10, 20)); // 30
+
+
+
+
+
