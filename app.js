@@ -1654,3 +1654,25 @@ console.log(double(10)); // 30
 
 
 
+// Callback Function 
+
+function welcomeUser(name) {
+    return `Welcome ${name}`
+}
+
+
+function processUser(name, callback) {
+    console.log("Processing User...");
+    return callback(name)
+}
+
+
+
+console.log(processUser("Sachin", welcomeUser)); 
+
+// Processing User... 
+// Welcome Sachin
+
+
+
+
