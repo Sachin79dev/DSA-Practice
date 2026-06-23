@@ -1536,3 +1536,22 @@ console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9)); // 45
 
 
 
+//  Login Validation 
+
+
+function login(username, password) {
+    if (username === "admin" && password === "1234") {
+        return "Login Successful";
+    } else {
+        return "Invalid Credentials"
+    }
+}
+
+
+console.log(login("admin", "1234")); // Login Successful
+console.log(login("Sachin", "1234")); // Invalid Credentials
+
+
+
+
+
