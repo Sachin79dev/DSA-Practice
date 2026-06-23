@@ -1315,3 +1315,17 @@ console.log(minStockItem);
 
 
 
+// Greeting Function
+
+
+function greet(name) {
+    console.log(`Hello ${name}`);
+}
+
+
+greet("Ritik"); // Hello Ritik
+
+
+
+
+
