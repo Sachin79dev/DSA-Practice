@@ -1676,3 +1676,44 @@ console.log(processUser("Sachin", welcomeUser));
 
 
 
+// Shopping Bill Generator
+
+
+// Input : 
+// [
+//     { name: "Mouse", price: 500 },
+//     { name: "Keyboard", price: 1000 },
+//     { name: "Monitor", price: 10000 }
+// ]
+
+
+// Output : 
+
+// Total:11500
+
+
+let itemsObj = [
+    { name: "Mouse", price: 500 },
+    { name: "Keyboard", price: 1000 },
+    { name: "Monitor", price: 10000 }
+]
+
+
+
+function generateBill(items) {
+    let total = 0;
+
+    for (let val of items) {
+        total = total + val.price
+    }
+
+    console.log(`Total: ${total}`); // Total: 11500
+
+}
+
+generateBill(itemsObj)
+
+
+
+
+
