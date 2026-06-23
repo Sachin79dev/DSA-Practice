@@ -1216,3 +1216,19 @@ console.log(reverseObj); // {Delhi: 'India', Tokyo: 'Japan', Paris: 'France'}
 
 
 
+// Student Marks Summary 
+
+
+let marks = {
+    math: 90,
+    science: 80,
+    english: 85
+};
+
+
+let totalMarks = Object.values(marks).reduce((n, i) => {
+    return n + i
+}, 0)
+
+
+console.log(totalMarks); // 255
