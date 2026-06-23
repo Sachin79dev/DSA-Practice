@@ -1182,3 +1182,37 @@ for(let [name, votes] of mostChoosen) {
 }
 
 console.log(`Most Voted Language is: ${mostVotedLanguage} which have ${highestVotes} votes.`); // Most Voted Language is: Python which have 30 votes.
+
+
+
+
+
+
+// Reverse Key Value
+
+
+let countries = {
+    India: "Delhi",
+    Japan: "Tokyo",
+    France: "Paris"
+};
+
+
+let reverseObj = {}
+
+let reversedArr = Object.entries(countries)
+
+
+function reversedObj(key, value) {
+    reverseObj[value] = key
+}
+
+for (let val of reversedArr) {
+    reversedObj(val[0], val[1])
+}
+
+console.log(reverseObj); // {Delhi: 'India', Tokyo: 'Japan', Paris: 'France'}
+
+
+
+
