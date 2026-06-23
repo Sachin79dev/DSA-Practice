@@ -1600,3 +1600,36 @@ console.log(isPalindrome("madam")); // true
 
 
 
+//  Password Strength Checker
+
+
+function checkPassword(password) {
+    // Check length
+    if (password.length < 8) {
+        return "Weak";
+    }
+
+    // Check for at least one number
+    let hasNumber = false;
+
+
+    for (let char of password) {
+        if (char >= '0' && char <= '9') {
+            hasNumber = true;
+            break;
+        } 
+    }
+    
+    return hasNumber? "Strong" : "Weak"
+
+}
+
+
+console.log(checkPassword("sachin")); // Weak 
+console.log(checkPassword("sachin123")); // Strong
+
+
+
+
+
+
