@@ -1416,3 +1416,17 @@ console.log(multiply(2, 3)); // 6
 
 
 
+// Discount Calculator
+
+
+function calculateDiscount(price) {
+    return price = price - ((price*10)/100)
+}
+
+
+console.log(calculateDiscount(500)); // 450
+
+
+
+
+
