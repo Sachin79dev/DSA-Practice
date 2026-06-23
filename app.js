@@ -1128,3 +1128,26 @@ console.log(userProp.length); // 4
 
 
 
+//  Highest Paid Employee
+
+let employees = {
+    aman: 25000,
+    ritik: 50000,
+    priya: 45000
+};
+
+let payble = Object.entries(employees)
+
+
+let highestPaid = "";
+let highestSalary = 0;
+
+for (let [name, salary] of payble) {
+    if (salary > highestSalary) {
+        highestSalary = salary;
+        highestPaid = name;
+    }
+}
+
+
+console.log("Highest Paid Employee:", highestPaid); // Highest Paid Employee: ritik
