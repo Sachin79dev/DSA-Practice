@@ -1232,3 +1232,26 @@ let totalMarks = Object.values(marks).reduce((n, i) => {
 
 
 console.log(totalMarks); // 255
+
+
+
+
+
+
+// Find Missing Property
+
+
+let user = {
+    name: "Ritik",
+    age: 21
+};
+
+
+
+if (Object.hasOwn(user, "email")) {
+    console.log("Email Exist!");
+} else {
+    user.email = "Not Provided"
+}
+
+console.log(user); // {name: 'Ritik', age: 21, email: 'Not Provided'}
