@@ -1578,3 +1578,25 @@ console.log(factorial(5)); // 120
 
 
 
+// Palindrome Checker
+
+function isPalindrome(str) {
+    let pali = str.split("").reverse()
+
+    let reverse = pali.join("")
+    
+    if(str == reverse) {
+        return true
+    } else {
+        return false
+    }
+}
+
+
+console.log(isPalindrome("sachin")); // false
+console.log(isPalindrome("madam")); // true
+
+
+
+
+
