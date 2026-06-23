@@ -1747,3 +1747,30 @@ console.log(adult(users)); // Ritik is Adult
 
 
 
+// Product Names Extractor
+
+let products = [
+    { name: "Laptop", price: 50000 },
+    { name: "Mouse", price: 500 }
+];
+
+
+function getProductNames(names) {
+    let productNames = []
+    for(let val of names) {
+        productNames.push(val.name)
+    }
+
+    return productNames
+}
+
+
+
+console.log(getProductNames(products)); // (2) ['Laptop', 'Mouse']
+
+
+
+
+
+
+
