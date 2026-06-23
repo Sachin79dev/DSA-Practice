@@ -1498,3 +1498,23 @@ console.log(countVowels("python")); // 1
 
 
 
+// Generate Username
+
+function generateUsername(name) {
+    let username = name.split(" ")
+
+    let result = username.join("_")
+
+    return result.toLowerCase()
+
+}
+
+
+console.log(generateUsername("Sachin Singh")); // sachin_singh
+console.log(generateUsername("Ritik Kumar")); // ritik_kumar
+
+
+
+
+
+
