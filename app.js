@@ -1633,3 +1633,24 @@ console.log(checkPassword("sachin123")); // Strong
 
 
 
+// Function Returning Function
+
+
+function makeMultiplier(multiplier) {
+    return function (number) {
+        return number * multiplier
+    }
+}
+
+let double = makeMultiplier(2);
+
+console.log(double(10)); // 20
+
+
+double = makeMultiplier(3);
+
+console.log(double(10)); // 30
+
+
+
+
