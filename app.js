@@ -1255,3 +1255,63 @@ if (Object.hasOwn(user, "email")) {
 }
 
 console.log(user); // {name: 'Ritik', age: 21, email: 'Not Provided'}
+
+
+
+
+
+
+//  Product Inventory Analyzer
+
+
+let inventory = {
+    mouse: 25,
+    keyboard: 10,
+    monitor: 5,
+    laptop: 2
+};
+
+
+// Total items in stock.
+
+let totalItems = Object.values(inventory).reduce((n, i) => {
+    return n + i;
+}, 0)
+
+
+console.log(totalItems); // 42
+
+// Total items in stock.
+
+// ----------------------------------------------------------
+
+// Product with highest and Lowest stock.
+
+let items = Object.entries(inventory);
+
+let maxStock = 0;
+let maxStockItem = ""
+let minStockItem = ""
+
+for(let [name, stock] of items) {
+    if(stock > maxStock) {
+        maxStock = stock;
+        maxStockItem = name;
+    }
+    if (stock < maxStock) {
+        maxStock = stock;
+        minStockItem = name;
+    }
+}
+
+
+console.log(maxStockItem); // mouse
+console.log(minStockItem);
+
+
+// Product with highest and Lowest stock.
+
+
+
+
+
