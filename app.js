@@ -1518,3 +1518,21 @@ console.log(generateUsername("Ritik Kumar")); // ritik_kumar
 
 
 
+// Dynamic Sum Function
+
+function sum(...numbers) {
+    let num = numbers.reduce((n, i) => {
+        return n + i
+    }, 0)
+
+
+    return num
+}
+
+console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9)); // 45
+
+
+
+
+
+
