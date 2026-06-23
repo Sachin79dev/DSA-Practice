@@ -1474,3 +1474,27 @@ console.log(reverseString("world")); // dlrow
 
 
 
+// Count Vowels
+
+
+function countVowels(str) {
+    let count = 0;
+
+
+    for (let i = 0; i < str.length; i++) {
+        if("a" == str[i] || "e" == str[i] || "i" == str[i] || "o" == str[i] || "u" == str[i]) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+
+console.log(countVowels("javascript")); // 3
+console.log(countVowels("python")); // 1
+
+
+
+
+
