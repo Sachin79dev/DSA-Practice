@@ -1388,3 +1388,15 @@ console.log(greet("Sachin")); // Hello Sachin
 
 
 
+// Celsius to Fahrenheit
+
+
+function convertTemp(celsius) {
+    return (celsius*9/5)+32
+}
+
+console.log(convertTemp(50)); // 122
+
+
+
+
