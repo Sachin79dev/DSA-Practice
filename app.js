@@ -1400,3 +1400,19 @@ console.log(convertTemp(50)); // 122
 
 
 
+
+// Arrow Function Practice
+
+
+let multiply = (a, b) => {
+    return a * b;
+}
+
+
+console.log(multiply(2, 3)); // 6
+
+
+
+
+
+
