@@ -1151,3 +1151,34 @@ for (let [name, salary] of payble) {
 
 
 console.log("Highest Paid Employee:", highestPaid); // Highest Paid Employee: ritik
+
+
+
+
+
+
+// Most Used Programming Languag
+
+
+let votes = {
+    JavaScript: 25,
+    Python: 30,
+    Java: 15,
+    Cpp: 10
+};
+
+
+let mostChoosen = Object.entries(votes);
+
+
+let highestVotes = 0;
+let mostVotedLanguage = "";
+
+for(let [name, votes] of mostChoosen) {
+    if(votes > highestVotes) {
+        highestVotes = votes;
+        mostVotedLanguage = name;
+    }
+}
+
+console.log(`Most Voted Language is: ${mostVotedLanguage} which have ${highestVotes} votes.`); // Most Voted Language is: Python which have 30 votes.
