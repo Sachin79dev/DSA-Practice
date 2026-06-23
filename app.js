@@ -1430,3 +1430,28 @@ console.log(calculateDiscount(500)); // 450
 
 
 
+
+// Largest of Three Numbers
+
+
+
+function findLargest(a, b, c) {
+    if (a > b && a > c) {
+        return a
+    } else if (b > a && b > c) {
+        return b
+    } else if (c > b && c > a) {
+        return c
+    }
+}
+
+let largest = findLargest(10, 20, 15)
+
+
+console.log(`Largest Number is: ${largest}`); // Largest Number is: 20
+
+
+
+
+
+
