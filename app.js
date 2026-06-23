@@ -1369,3 +1369,22 @@ function isEven(num) {
 
 console.log(isEven(4)); // true
 console.log(isEven(5)); // false
+
+
+
+
+
+// Default Username
+
+
+function greet(name="Guest") {
+    return `Hello ${name}`
+}
+
+console.log(greet()); // Hello Guest
+console.log(greet("Sachin")); // Hello Sachin
+
+
+
+
+
