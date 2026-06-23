@@ -1717,3 +1717,33 @@ generateBill(itemsObj)
 
 
 
+// Find Adult Users
+
+
+let users = [
+    { name: "Ritik", age: 20 },
+    { name: "Aman", age: 16 },
+    { name: "Priya", age: 25 }
+];
+
+
+
+function adult(age) {
+    for(let val of age) {
+        if(val.age >= 18) {
+            return `${val.name} is Adult`
+        } else {
+            return `${val.name} is not Adult`
+        }
+    }
+}
+
+
+console.log(adult(users)); // Ritik is Adult
+
+
+
+
+
+
+
