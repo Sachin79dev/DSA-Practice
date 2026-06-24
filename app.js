@@ -1798,3 +1798,25 @@ console.log(findUser(users, "Ritik")); // {name: 'Ritik'}
 
 
 
+// Total Marks
+
+let students = [
+    { name: "Ritik", marks: 80 },
+    { name: "Aman", marks: 90 },
+    { name: "Priya", marks: 70 }
+];
+
+function getTotalMarks(students) {
+    let totalMarks = 0;
+
+    for (let std of students) {
+        totalMarks += std.marks
+    }
+
+    return totalMarks
+}
+
+
+
+console.log(getTotalMarks(students)); // 240
+
