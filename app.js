@@ -1774,3 +1774,27 @@ console.log(getProductNames(products)); // (2) ['Laptop', 'Mouse']
 
 
 
+//  Find User By Name
+
+
+let users = [
+    { name: "Ritik" },
+    { name: "Aman" },
+    { name: "Priya" }
+];
+
+
+
+function findUser(users, username) {
+    return users.find(user => user.name === username)
+}
+
+
+console.log(findUser(users, "Aman")); // {name: 'Aman'}
+console.log(findUser(users, "Ritik")); // {name: 'Ritik'}
+
+
+
+
+
+
