@@ -1881,3 +1881,27 @@ console.log(students);
 
 
 
+// Count Premium Products
+
+
+products = [
+    { name: "Laptop", price: 50000 },
+    { name: "Phone", price: 30000 },
+    { name: "Mouse", price: 500 }
+];
+
+function premiumProducts(products) {
+    let count = 0
+    let premProducts =  products.filter((n) => n.price > 10000)
+
+    return count = premProducts.length
+}
+
+console.log(premiumProducts(products)); // 2
+
+
+
+
+
+
+
