@@ -1953,3 +1953,27 @@ console.log(findProductById(2)); // {id: 2, name: 'Mouse'}
 
 
 
+// Usernames Generator
+
+let users = [
+    { name: "Ritik Rajput" },
+    { name: "Aman Gupta" }
+];
+
+
+function userName(users) {
+    let username = users.map((n, i) => {
+        return n.name.split(" ").join("_").toLowerCase()
+    })
+
+    return username
+}
+
+
+console.log(userName(users)); // (2) ['ritik_rajput', 'aman_gupta']
+
+
+
+
+
+
