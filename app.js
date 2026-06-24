@@ -1816,7 +1816,40 @@ function getTotalMarks(students) {
     return totalMarks
 }
 
-
-
 console.log(getTotalMarks(students)); // 240
+
+
+
+
+
+
+
+// Available Products
+
+
+let products = [
+    { name: "Mouse", stock: 10 },
+    { name: "Keyboard", stock: 0 },
+    { name: "Monitor", stock: 5 }
+];
+
+
+function avlProducts(products) {
+    return products.filter(n => n.stock > 0)
+}
+
+
+console.log(avlProducts(products));
+
+// Output
+// [
+//     { name: "Mouse", stock: 10 },
+//     { name: "Monitor", stock: 5 }
+// ];
+
+
+
+
+
+
 
