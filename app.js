@@ -1905,3 +1905,27 @@ console.log(premiumProducts(products)); // 2
 
 
 
+// Shopping Cart Total 
+
+
+let cart = [
+    { name: "Mouse", price: 500, qty: 2 },
+    { name: "Keyboard", price: 1000, qty: 1 },
+    { name: "Monitor", price: 10000, qty: 1 }
+];
+
+
+
+function getCartTotal(cart) {
+    return cart.reduce((n, i) => {
+        return n + (i.price * i.qty);
+    }, 0)
+}
+
+console.log(getCartTotal(cart)); // 12000
+
+
+
+
+
+
