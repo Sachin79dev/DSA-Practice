@@ -1774,7 +1774,7 @@ console.log(getProductNames(products)); // (2) ['Laptop', 'Mouse']
 
 
 
-//  Find User By Name
+//  Find User By Name using Callback
 
 
 let users = [
