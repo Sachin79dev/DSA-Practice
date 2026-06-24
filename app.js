@@ -1929,3 +1929,27 @@ console.log(getCartTotal(cart)); // 12000
 
 
 
+// Inventory Search
+
+let inventory = [
+    { id: 1, name: "Laptop" },
+    { id: 2, name: "Mouse" },
+    { id: 3, name: "Monitor" }
+];
+
+
+
+function findProductById(userId) {
+    return inventory.find((n) => n.id === userId)
+}
+
+
+console.log(findProductById(1)); // {id: 1, name: 'Laptop'}
+console.log(findProductById(2)); // {id: 2, name: 'Mouse'}
+
+
+
+
+
+
+
