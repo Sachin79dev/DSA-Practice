@@ -1977,3 +1977,35 @@ console.log(userName(users)); // (2) ['ritik_rajput', 'aman_gupta']
 
 
 
+// Highest Scoring Student
+
+
+
+let students = [
+    { name: "Ritik", marks: 85 },
+    { name: "Aman", marks: 95 },
+    { name: "Priya", marks: 75 }
+];
+
+
+
+function highestScorer(students) {
+    let scorer = students[0]
+    for(let std of students) {
+        if(std.marks > scorer.marks) {
+            scorer = std
+        }
+    }
+
+    return scorer
+}
+
+
+console.log(highestScorer(students)); // {name: 'Aman', marks: 95}
+
+
+
+
+
+
+
