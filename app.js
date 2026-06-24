@@ -1,65 +1,3 @@
-
-// counting the vowels inside given string using switch/case condtions
-
-
-let str = prompt("Enter a String")
-let consonent = 0;
-let vowels = 0;
-
-for(let i = 0; i<str.length; i++) {
-    ch = str.charAt(i)
-
-    switch(ch) {
-        case 'a':
-        case 'e':
-        case 'i':
-        case 'o':
-        case 'u': {
-            vowels++
-            break
-        }
-
-        default : {
-            consonent++ 
-        }
-    }
-}
-
-console.log(`Consonent are ${vowels}`);
-console.log(`Vowels are ${vowels}`);
-
-
-
-// counting the vowels inside given string using if/else conditions
-
-
-let str = prompt("Enter a String")
-let cons = 0;
-let vowels = 0;
-
-for(let i = 0; i<str.length; i++) {
-    ch = str.charAt(i).toLowerCase()
-
-    if(ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u' ) {
-        vowels++
-    } else {
-        cons++
-    }
-}
-console.log(`Vowels are ${vowels}`);
-console.log(`Consonant are ${cons}`);
-
-
-
-
-
-// calcultaing the area of circle, rectangle and triangle using switch case constioning 
-
-// circle -- (A=πr2) // radius of circle = r.
-// rectangle -- (A=lw) // length = l, width = w.
-// triangle -- (A=1/2​bh) // base = b, height = h.
-
-
 let whichArea = Number(prompt())
 
 
@@ -2002,6 +1940,40 @@ function highestScorer(students) {
 
 
 console.log(highestScorer(students)); // {name: 'Aman', marks: 95}
+
+
+
+
+
+
+
+// Student Average Generator
+
+
+let students = [
+    { name: "Ritik", marks: [80, 90, 85] },
+    { name: "Aman", marks: [70, 75, 80] }
+];
+
+
+
+function getAverageMarks(students) {
+    return students.map((std) => ({
+        name: std.name,
+        average: std.marks.reduce((acc, i) => acc + i, 0) / std.marks.length
+    }))
+}
+
+
+console.log(getAverageMarks(students));
+
+
+// Output 
+// {name: 'Ritik', average: 85} 
+// {name: 'Aman', average: 75}
+
+
+
 
 
 
