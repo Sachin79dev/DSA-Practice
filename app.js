@@ -1853,3 +1853,31 @@ console.log(avlProducts(products));
 
 
 
+//  Add New Student
+
+function addStudent(students, student) {
+    return students.push({ student })
+}
+
+let students = []
+
+addStudent(students, { name: "Sachin", marks: 90 });
+addStudent(students, { name: "Priyanka", marks: 80 });
+addStudent(students, { name: "Deep", marks: 70 });
+
+console.log(students);
+
+
+// Output 
+
+// [
+//     { name: "Sachin", marks: 90 },
+//     { name: "Priyanka", marks: 80 },
+//     { name: "Deep", marks: 70 }
+// ]
+
+
+
+
+
+
