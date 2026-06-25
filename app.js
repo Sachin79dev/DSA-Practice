@@ -1978,6 +1978,32 @@ console.log(getAverageMarks(students));
 
 
 
+// Update Product Stock
+
+
+function updateStock(id, quantity) {
+    let products = [
+        { id: 1, stock: 10 },
+        { id: 2, stock: 5 }
+    ];
+    let product = products.find((n) => n.id === id);
+    product.stock = quantity;
+    return products;
+}
+
+
+console.log(updateStock(1, 20));
+
+
+// Output
+
+
+// {id: 1, stock: 20}
+// {id: 2, stock: 5}
+
+
+
+
 
 
 
