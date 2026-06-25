@@ -2169,3 +2169,72 @@ console.log(revenueSystem(products));
 //     perProductRev: (2) [10000, 10000],
 //     totalrev: 20000
 // }
+
+
+
+
+
+
+
+// Attendance System
+
+
+let students = [
+    { name: "Ritik", present: true },
+    { name: "Aman", present: false },
+    { name: "Priya", present: true }
+];
+
+
+function countPresent(students) {
+    let presents = students.filter((n) => {
+        if (n.present == true) {
+            return n
+        }
+    })
+
+    return presents.length
+}
+
+
+function countAbsent(students) {
+    let absent = students.filter((n) => {
+        if (n.present == false) {
+            return n
+        }
+    })
+
+    return absent.length
+}
+
+
+function getPresentStudents() {
+    let presentStd = students.filter((n) => {
+        if (n.present == true) {
+            return n.name
+        }
+    })
+
+    return presentStd
+}
+
+
+
+console.log(countPresent(students));
+console.log(countAbsent(students));
+console.log(getPresentStudents(students));
+
+// Output
+
+// 2
+// 1
+// [
+//     { name: "Ritik", present: true },
+//     { name: "Priya", present: true }
+// ];
+
+
+
+
+
+
