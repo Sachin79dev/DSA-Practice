@@ -2007,3 +2007,33 @@ console.log(updateStock(1, 20));
 
 
 
+// Sort Students by Marks 
+
+
+
+let std = [
+    { name: "A", marks: 70 },
+    { name: "B", marks: 95 },
+    { name: "C", marks: 80 }
+]
+
+function shortingStd() {
+    return std.sort((a, b) => b.marks - a.marks)
+}
+
+
+console.log(shortingStd());
+
+// Output
+
+// [
+//     { name: 'B', marks: 95 },
+//     { name: 'C', marks: 80 },
+//     { name: 'A', marks: 70 }
+// ]
+
+
+
+
+
+
