@@ -2110,3 +2110,62 @@ console.log(generateReport(students));
 //         grade: 'C'
 //     }
 // ]
+
+
+
+
+
+
+
+// Product Revenue Analyzer
+
+
+
+let products = [
+    {
+        name: "Mouse",
+        price: 500,
+        sold: 20
+    },
+    {
+        name: "Keyboard",
+        price: 1000,
+        sold: 10
+    }
+];
+
+
+function revenueSystem(products) {
+    let perProductRev = products.map((n, i) => {
+        return n.price * n.sold
+    })
+
+    let totalrev = perProductRev.reduce((a, i) => {
+        return a + i
+    }, 0)
+
+    let bestSell = 0;
+
+    for (let prod of products) {
+        if (prod.sold > bestSell) {
+            bestSell = prod.name
+        }
+    }
+
+    return {
+        perProductRev,
+        totalrev,
+        bestSell
+    }
+}
+
+console.log(revenueSystem(products));
+
+
+// Output
+
+// {
+//     bestSell: "Mouse",
+//     perProductRev: (2) [10000, 10000],
+//     totalrev: 20000
+// }
