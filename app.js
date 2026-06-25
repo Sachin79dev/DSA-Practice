@@ -2037,3 +2037,76 @@ console.log(shortingStd());
 
 
 
+// Student Grade Report
+
+
+// What is this question asking?
+// For every student:
+//  1. Calculate average.
+//  2. Decide grade.
+//  3. Create a new object.
+//  4. Return a new array.
+
+
+
+
+let students = [
+    {
+        name: "Ritik",
+        marks: [80, 90, 85]
+    },
+    {
+        name: "Aman",
+        marks: [50, 40, 60]
+    }
+];
+
+
+
+function generateReport(students) {
+    return students.map((n) => {
+        let sum = n.marks.reduce((acc, i) => {
+            return (acc + i)
+        }, 0)
+
+        let avg = sum / n.marks.length;
+
+        let grad = "";
+
+        if (avg > 75 && avg < 100) {
+            grd = "A"
+        } else if (avg > 55 && avg < 75) {
+            grd = "B"
+        } else if (avg > 33 && avg < 55) {
+            grd = "C"
+        } else {
+            grd = "D"
+        }
+
+        return {
+            name: n.name,
+            average: avg,
+            grade: grd
+        }
+    })
+}
+
+
+console.log(generateReport(students));
+
+
+// Ouput 
+
+// [
+//     {
+//         name: 'Ritik',
+//         average: 85,
+//         grade: 'A'
+//     },
+
+//     {
+//         name: 'Aman',
+//         average: 50,
+//         grade: 'C'
+//     }
+// ]
