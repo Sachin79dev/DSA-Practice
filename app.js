@@ -2330,3 +2330,82 @@ console.log(library);
 
 
 
+// Order Management System
+
+
+let orders = []
+
+
+function createOrder(id, customer, amount) {
+    return orders.push({
+        id,
+        customer,
+        amount,
+        status: "Pending"
+    })
+} 
+
+
+
+
+function updateStatus(id) {
+    let udt = orders.find((n) => n.id === id)
+
+    if(udt) {
+        udt.status = "Completed"
+    }
+}
+
+
+function getPendingOrders() {
+    return orders.filter((n) => n.status === "Pending")
+}
+
+
+
+function getCompletedOrders() {
+    return orders.filter((n) => n.status === "Completed")
+}
+
+
+
+
+createOrder(1, "Sachin", 3000)
+createOrder(2, "Priyanka", 1500)
+createOrder(3, "Deep", 1000)
+
+console.log(orders);
+
+
+updateStatus(2)
+
+
+console.log(getPendingOrders());
+console.log(getCompletedOrders());
+
+
+// Output
+
+
+// [
+//     {id: 1, customer: 'Sachin', amount: 3000, status: 'Pending'},
+//     {id: 2, customer: 'Priyanka', amount: 1500, status: 'Completed'},
+//     {id: 3, customer: 'Deep', amount: 1000, status: 'Pending'}
+// ]
+
+
+// [
+//     {id: 1, customer: 'Sachin', amount: 3000, status: 'Pending'},
+//     {id: 3, customer: 'Deep', amount: 1000, status: 'Pending'}
+// ]
+
+
+// [
+//     {id: 2, customer: 'Priyanka', amount: 1500, status: 'Completed'}
+// ]
+
+
+
+
+
+
