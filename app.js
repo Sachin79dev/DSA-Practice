@@ -2238,3 +2238,95 @@ console.log(getPresentStudents(students));
 
 
 
+// Library Management System
+
+
+let library = [
+    {
+        id: 1,
+        title: "Atomic Habits",
+        borrowed: false
+    }
+]
+
+
+
+function addBook(id, title) {
+    library.push({
+        id,
+        title,
+        borrowed: false
+    })
+
+    return library
+}
+
+
+
+function borrowBook(id) {
+    let borrow = library.find((n) => n.id === id)
+
+    if (borrow) {
+        borrow.borrowed = true
+    }
+
+
+    return borrow
+
+}
+
+
+
+function returnBook(id) {
+    let rtn = library.find((n) => n.id === id);
+
+    if (rtn) {
+        rtn.borrowed = false
+    }
+
+    return rtn
+}
+
+
+
+
+
+function showAvailableBooks(library) {
+    let abl = library.filter((n) => n.borrowed === false);
+    console.log(abl);
+}
+
+
+
+
+addBook(2, "Alchemist")
+addBook(3, "Do Epic Shit")
+borrowBook(2)
+showAvailableBooks(library)
+returnBook(2)
+
+
+console.log(library);
+
+
+
+// Output 
+
+// [
+//     { id: 1, title: 'Atomic Habits', borrowed: false },
+//     { id: 3, title: 'Do Epic Shit', borrowed: false }
+// ]
+
+
+// [
+//     { id: 1, title: 'Atomic Habits', borrowed: false },
+//     { id: 2, title: 'Alchemist', borrowed: false },
+//     { id: 3, title: 'Do Epic Shit', borrowed: false }
+// ]
+
+
+
+
+
+
+
