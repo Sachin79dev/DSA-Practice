@@ -2409,3 +2409,96 @@ console.log(getCompletedOrders());
 
 
 
+// Mini E-Commerce System
+
+
+// {
+// id:1,
+// name:"Laptop",
+// price:50000,
+// stock:10
+// }
+
+
+let products = []
+
+
+
+function addProduct(id, name, price, stock) {
+    return products.push({
+        id,
+        name,
+        price,
+        stock
+    })
+}
+
+
+
+addProduct(1, "Laptop", 50000, 10)
+addProduct(2, "Mouse", 500, 20)
+addProduct(3, "KeyBoard", 800, 15)
+addProduct(4, "Monitor", 10000, 12)
+addProduct(5, "Headphone", 2000, 10)
+
+
+console.log(products);
+
+
+function removeProduct(id) {
+    let index = products.findIndex((n) => n.id === id)
+
+    console.log(index);
+    
+
+    if (index !== -1) {
+        return products.splice(index, 1);
+    }
+}
+
+removeProduct(2)
+
+
+
+function updateStock(id, stocks) {
+    let update = products.find((n) => n.id === id)
+
+    if (update) {
+        update.stock = stocks
+    }
+
+    return update
+
+}
+
+
+updateStock(1, 20)
+
+console.log(products);
+
+
+function purchaseProduct(id, stocks) {
+    let purchase = products.find((n) => n.id === id)
+
+    if(purchase) {
+        purchase.stock = (purchase.stock - stocks)
+    }
+
+    return purchase
+}
+
+
+purchaseProduct(3, 5)
+
+
+console.log(products);
+
+
+function getInventoryValue() {
+    let total = products.map((n) => n.price * n.stock).reduce((n, i) => n + i, 0)
+
+    return total
+}
+
+
+console.log(getInventoryValue()); // 1152000
