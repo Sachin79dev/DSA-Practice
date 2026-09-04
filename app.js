@@ -2502,3 +2502,20 @@ function getInventoryValue() {
 
 
 console.log(getInventoryValue()); // 1152000
+
+
+
+
+
+
+
+
+
+
+let n = Number(prompt("Enter the Number"))
+
+
+for (let i = n; i >= 1; i--) {
+  console.log(i);
+} 
+
