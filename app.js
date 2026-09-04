@@ -2555,3 +2555,20 @@ console.log(sum);
 
 
 
+// sum up to n terms
+
+let n = Number(prompt("Enter the Number"));
+
+let sum = 0
+
+for ( let i = 1; i <= n; i++) {
+  sum += i
+}
+
+
+console.log(sum);
+
+
+
+
+
