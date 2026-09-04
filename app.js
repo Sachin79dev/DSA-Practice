@@ -2519,3 +2519,23 @@ for (let i = n; i >= 1; i--) {
   console.log(i);
 } 
 
+
+
+
+
+// Take a numner as input and print its table
+// 5 * 1 = 5
+// 5 * 2 = 10
+
+
+let n = Number(prompt("Enter the Number"));
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`${n} * ${i} = ${n * i}`);
+}
+
+
+
+
+
+
